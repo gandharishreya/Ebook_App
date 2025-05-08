@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <display-name>EBook Web Application</display-name>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.user.servlet.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.user.servlet.LoginServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.user.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SearchBookServlet</servlet-name>
+        <servlet-class>com.user.servlet.SearchBookServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SearchBookServlet</servlet-name>
+        <url-pattern>/searchBook</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>OrderServlet</servlet-name>
+        <servlet-class>com.user.servlet.OrderServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>OrderServlet</servlet-name>
+        <url-pattern>/order</url-pattern>
+    </servlet-mapping>
+    
+       <servlet>
+        <servlet-name>RemoveBookServlet</servlet-name>
+        <servlet-class>com.user.servlet.RemoveBookServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>RemoveBookServlet</servlet-name>
+        <url-pattern>/remove</url-pattern>
+    </servlet-mapping>
+    
+      <servlet>
+        <servlet-name>AddOldBook</servlet-name>
+        <servlet-class>com.user.servlet.AddOldBook</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AddOldBook</servlet-name>
+        <url-pattern>/addOldBook</url-pattern>
+    </servlet-mapping>
+    
+         <servlet>
+        <servlet-name>DeleteOldBook</servlet-name>
+        <servlet-class>com.user.servlet.DeleteOldBook</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteOldBook</servlet-name>
+        <url-pattern>/deleteOldBook</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <servlet-class>com.user.servlet.UpdateProfileServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>UpdateProfileServlet</servlet-name>
+        <url-pattern>/updateProfile</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>com.user.servlet.CartServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/cart</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AddBooks</servlet-name>
+        <servlet-class>com.admin.servlet.AddBooks</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>AddBooks</servlet-name>
+        <url-pattern>/addBooks</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>EditBooks</servlet-name>
+        <servlet-class>com.admin.servlet.EditBooks</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>EditBooks</servlet-name>
+        <url-pattern>/editBooks</url-pattern>
+    </servlet-mapping>
+    
+       <servlet>
+        <servlet-name>DeleteBooks</servlet-name>
+        <servlet-class>com.admin.servlet.DeleteBooks</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>DeleteBooks</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    
+    
+    
+</web-app>
+
+ <!--  <!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+ 
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+</web-app>
+-->
